@@ -5,6 +5,6 @@ api_hash = "YOUR_API_HASH"
 #main
 chat_name = "YOUR_CHAT_NAME"
 
-#send message
+#send message 
 TOKEN = "YOUR_CHANNEL_TOKEN"
 chat_id = "YOUR_CHAT_ID"
