@@ -1,6 +1,11 @@
 # Telegram-Chat-Scraper
 This tool allows to scrape through all messages send in a chat or in a channel on Telegram, regardless the chat is set to private.
 
+## How to install
+The first thing to do is to install all the libraries.
+First you have to install ```pip3 install asyncio ``` to run the asynchronous tasks.
+Then the next library to install is telethon with ```pip3 install telethon```
+
 ## How to use
 To start using this tool you must change the variables into config.py. All the fields are required to work, except the sendmessage part, that is not mandatory.
 
