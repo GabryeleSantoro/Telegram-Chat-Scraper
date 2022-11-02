@@ -3,7 +3,7 @@ This tool allows to scrape through all messages send in a chat or in a channel o
 
 ## How to install
 The first thing to do is to install all the libraries.
-First you have to install ```pip3 install asyncio ``` to run the asynchronous tasks.
+First you have to install ```pip3 install asyncio``` to run the asynchronous tasks.
 Then the next library to install is telethon with ```pip3 install telethon```
 
 ## How to use
