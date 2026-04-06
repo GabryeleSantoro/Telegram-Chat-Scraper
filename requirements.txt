@@ -1,10 +1,11 @@
 asyncio==4.0.0
 certifi==2026.2.25
-python-dotenv==1.0.1
 charset-normalizer==3.4.7
+dotenv==0.9.9
 idna==3.11
 pyaes==1.6.1
 pyasn1==0.6.3
+python-dotenv==1.2.2
 requests==2.33.1
 rsa==4.9.1
 Telethon==1.42.0
