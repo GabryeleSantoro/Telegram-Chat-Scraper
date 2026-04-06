@@ -3,7 +3,11 @@ from telethon import events
 from login import login
 from sendmessage import sendMessage
 
-from config import chat_name
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+chat_name = os.getenv("chat_name")
 
 def main():
     client = login()

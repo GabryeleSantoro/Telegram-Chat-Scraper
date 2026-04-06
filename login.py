@@ -1,8 +1,11 @@
 from telethon import TelegramClient
 import asyncio
-from config import api_hash,api_id
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
-#use the config.py file to change your personali id and hash. DO NOT SHARE WITH ANYONE 
+api_id = os.getenv("api_id")
+api_hash = os.getenv("api_hash")
  
 def login():
     client = TelegramClient('anon', api_id, api_hash)
