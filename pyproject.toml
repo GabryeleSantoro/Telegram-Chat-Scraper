@@ -1,0 +1,20 @@
+[project]
+name = "telegram-chat-scraper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "GabryeleSantoro", email = "gabrielesantoro46@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "python-dotenv==1.2.2",
+    "telethon==1.42.0",
+]
+
+[project.scripts]
+telegram-chat-scraper = "telegram_chat_scraper:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
