@@ -2,9 +2,12 @@
 This tool allows to scrape through all messages send in a chat or in a channel on Telegram, regardless the chat is set to private.
 
 ## How to install
-The first thing to do is to install all the libraries.
-First you have to install ```pip3 install asyncio``` to run the asynchronous tasks.
-Then the next library to install is telethon with ```pip3 install telethon```
+Create a virtual environment and install all the libraries:
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
 ## How to use
 To start using this tool copy `.env.example` to `.env` (`cp .env.example .env`) and fill in the values. The filter lives in `pokemon_filter.py`; run `python3 pokemon_filter.py` to check it.
