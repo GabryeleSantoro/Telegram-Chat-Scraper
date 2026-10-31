@@ -41,3 +41,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Forwarder state
+last_id.txt
