@@ -7,14 +7,7 @@ First you have to install ```pip3 install asyncio``` to run the asynchronous tas
 Then the next library to install is telethon with ```pip3 install telethon```
 
 ## How to use
-To start using this tool create a `.env` file next to the scripts:
-```
-api_id=123456
-api_hash=your_api_hash
-chat_name=@pokemon_alert_24_bot
-target_chat=@your_channel
-```
-`chat_name` is the source chat, `target_chat` is where the messages about the Italian Pokémon 30° Anniversario cards are sent (`me` = Saved Messages). If the source is a bot, press /start on it from your account first. The filter lives in `pokemon_filter.py`; run `python3 pokemon_filter.py` to check it.
+To start using this tool copy `.env.example` to `.env` (`cp .env.example .env`) and fill in the values. The filter lives in `pokemon_filter.py`; run `python3 pokemon_filter.py` to check it.
 
 On start the tool reads all the old messages, then keeps listening for new ones. The last processed id is saved in `last_id.txt`: delete it to process the whole history again.
 
