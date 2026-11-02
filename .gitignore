@@ -42,5 +42,6 @@ Thumbs.db
 *.swo
 *~
 
-# Forwarder state
+# Forwarder state and message db
 last_id.txt
+messages.db*

@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ## How to use
 To start using this tool copy `.env.example` to `.env` (`cp .env.example .env`) and fill in the values. The filter lives in `pokemon_filter.py`; run `python3 pokemon_filter.py` to check it.
 
-On start the tool reads all the old messages, then keeps listening for new ones. The last processed id is saved in `last_id.txt`: delete it to process the whole history again.
+The tool only listens for new messages (old ones are skipped). Every new message is saved in `messages.db` (SQLite, table `messages`, column `matched` = forwarded or not), and every shop seen in an alert lands in table `stores` (name, site URL); `python3 store.py` checks it. Query it anytime, e.g. `sqlite3 messages.db "SELECT date, text FROM messages WHERE matched ORDER BY date DESC LIMIT 5"`.
 
 To get your api_id and api_hash you have to log in in this website https://my.telegram.org/auth, that will give all the api key to use.
 Filled all the fields go to the folder where the files are located and run ``` main.py ```. Then follow the instruction et voilà, you are officially scraping a telegram chat.
